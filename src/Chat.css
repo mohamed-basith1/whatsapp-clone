@@ -1,0 +1,172 @@
+.chat {
+  background-color: white;
+  flex: 0.7;
+  border-radius: 1rem;
+}
+.chatheader {
+  background-color: rgb(237, 237, 237);
+  color: black;
+  height: 9vh;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+  border-radius: 0px 1rem 0px 0px;
+}
+.chatheader > p {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.chatbody {
+  background-color: rgb(229, 221, 213);
+  height: 79vh;
+  padding: 0px 10px;
+  overflow-y: scroll;
+}
+.chatfooter {
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  height: 7vh;
+  padding: 10px;
+  border-radius: 0px 0px 1rem 0px;
+}
+.chatfooter > form {
+  flex: 1;
+  display: flex;
+}
+.chatfooter > form > input {
+  flex: 1;
+  border: none;
+  border-radius: 2rem;
+  padding: 10px;
+  outline-width: 0;
+}
+.chatfooter > form > button {
+  display: none;
+}
+.message {
+  position: relative;
+  background-color: white;
+  width: fit-content;
+  padding: 6px;
+  border-radius: 1px 10px 10px 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.message > img {
+  max-height: 300px;
+}
+.messageother {
+  background-color: rgb(220, 248, 198);
+  width: fit-content;
+  padding: 6px;
+  border-radius: 10px 1px 10px 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+}
+
+.messageother > img {
+  max-height: 300px;
+}
+
+@media only screen and (max-width: 500px) {
+  .chatbody {
+    background-color: rgb(229, 221, 213);
+    height: 79vh;
+    padding: 0px 5px;
+    overflow-y: scroll;
+  }
+  .chat {
+    width: 100px;
+  }
+  .message {
+    position: relative;
+    background-color: ehite;
+    width: fit-content;
+    max-width: 300px;
+    padding: 2px;
+    border-radius: 1px 7px 7px 7px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 10px;
+  }
+  .message > img {
+    max-height: 80px;
+    max-width: 150px;
+  }
+
+  .messageother {
+    background-color: rgb(220, 248, 198);
+    width: fit-content;
+    padding: 2px;
+    border-radius: 7px 1px 7px 7px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    font-size: 10px;
+    max-width: 120px;
+  }
+  .messageother > img {
+    max-height: 80px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .chatheaderavatar {
+    height: 30px;
+    width: 30px;
+  }
+  .chatheader {
+    height: 9vh;
+    display: flex;
+    padding: 10px;
+
+    border-bottom: 1px solid lightgray;
+  }
+  .chatbody {
+    background-color: rgb(229, 221, 213);
+    height: 81vh;
+    padding: 0px 5px;
+    overflow-y: scroll;
+  }
+  .messageother > img {
+    max-height: 150px;
+  }
+  .message > img {
+    max-height: 150px;
+  }
+
+  .chatfooter {
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    height: 5vh;
+    padding: 7px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .message > img {
+    max-height: 100px;
+  }
+  .messageother > img {
+    max-height: 100px;
+  }
+}
+
+@media only screen and (max-width: 363px) {
+  .chatfooter {
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    height: 5vh;
+    padding: 5px;
+  }
+
+  .chatfooter > form > input {
+    width: 100px;
+    border: none;
+    border-radius: 2rem;
+    padding: 10px;
+    outline-width: 0;
+  }
+}

@@ -1,0 +1,37 @@
+.sidebarchat {
+  background-color: white;
+  height: 75px;
+  border-bottom: 1px solid lightgrey;
+}
+.sidebarchat:hover {
+  background-color: rgb(235, 235, 235);
+}
+.chatlist {
+  display: flex;
+  padding: 20px;
+}
+.chatlist > h3 {
+  color: black;
+  margin-left: 12px;
+  margin-top: -1px;
+  font-weight: 100;
+}
+@media only screen and (max-width: 500px) {
+  .sidebarchat {
+    height: 50px;
+  }
+  .chatlist {
+    display: flex;
+    padding: 5px;
+  }
+  .chatlist > h3 {
+    color: black;
+    margin-left: 8px;
+    margin-top: 4px;
+    font-weight: 40;
+    font-size: 10px;
+  }
+  .chatlist > Avatar {
+    font-size: 20px;
+  }
+}

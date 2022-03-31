@@ -1,0 +1,68 @@
+.sidebar {
+  flex: 0.3;
+  border-radius: 5px;
+}
+
+.sidebar-header {
+  padding: 20px;
+
+  height: 70px;
+  border-right: 1px solid lightgray;
+}
+
+.sidebar-search {
+  height: 60px;
+  background-color: white;
+  border-bottom: 1px solid rgb(238, 234, 234);
+}
+.sidebar-header-content {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar-header-content-symble {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebarchat-okok {
+  background-color: white;
+  flex: 1;
+  height: 82.5%;
+  overflow-y: scroll;
+  border-radius: 0px 0px 0px 5px;
+}
+.loading {
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 50%;
+  margin-bottom: 50%;
+  display: table;
+}
+
+.option:hover {
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 500px) {
+  .sidebar-header {
+    padding: 10px;
+    height: 58px;
+  }
+  .sidebarchat-okok {
+    background-color: white;
+    flex: 1;
+    height: 130%;
+    overflow-y: scroll;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar-header {
+    padding: 10px;
+    height: 58px;
+  }
+  .sidebarchat-okok {
+    flex: 1;
+    height: 81%;
+    overflow-y: scroll;
+  }
+}
